@@ -1,0 +1,93 @@
+/* StoryEditor.css */
+
+.story-editor {
+    max-width: -webkit-fill-available;
+    margin:0px;
+    padding: 20px;
+    height: 610px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('C:/Users/Preya/SELF-PROJECTS/storytelling/public/pexels-suzyhazelwood-1995842.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .editor-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff; /* Adjust text color for better visibility */
+  }
+  
+  .editor-icon {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+  }
+  
+ 
+  
+  .story-editor form {
+    background-color: rgba(255, 255, 255, 0.9); /* Add opacity for better readability */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px; /* Add margin to separate from the edges */
+    opacity: 0.9;
+  }
+  
+  .story-editor form > div {
+    margin-bottom: 15px;
+  }
+  
+  .story-editor label {
+    font-weight: bold;
+    color: #333; /* Adjust label color for better contrast */
+  }
+  
+  .story-editor input[type="text"],
+  .story-editor textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .story-editor textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+  
+  .story-editor button[type="submit"],
+  .story-editor button[type="button"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .story-editor button[type="submit"]:hover,
+  .story-editor button[type="button"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .story-editor button[type="button"] {
+    background-color: #28a745;
+  }
+  
+  .story-editor button[type="button"]:hover {
+    background-color: #218838;
+  }
+  
+  .story-editor .loading {
+    text-align: center;
+    color: #007bff;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  

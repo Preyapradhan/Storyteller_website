@@ -1,0 +1,68 @@
+.story-list-container {
+  padding: 20px;
+  position: relative; /* Ensure position relative for absolute positioning of shapes */
+}
+
+.story-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.story-card {
+  background-color: #f9eeb0;
+  border: 1px solid #f4f6b1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.story-card:hover {
+  background-color:rgb(208, 175, 255);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.story-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.story-card p {
+  color: #666;
+}
+
+.story-card a {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Shapes in the background */
+.story-list-container::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 50%;
+  height: 50%;
+  background-color: #bbef2de7;
+  z-index: -1;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  opacity: 0.7;
+}
+
+.story-list-container::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 50%;
+  height: 50%;
+  background-color: #007bff;
+  z-index: -1;
+  clip-path: polygon(0 0, 100% 0, 0% 100%);
+  opacity: 0.7;
+}

@@ -1,0 +1,194 @@
+/* StoryPage.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cookie&family=Dancing+Script&family=Great+Vibes&family=Pacifico&family=Satisfy&display=swap');
+
+.story-body {
+  padding: 60px 150px 0 230px;
+  background-color:bisque; /* Set the base background color to black */
+  position: relative;
+  width: 100%;
+  height: 100%; /* Make the story body take the full viewport height */
+}
+
+/* Smoky background effect */
+.smoky-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(22, 71, 155, 0.5) 0%, rgba(32, 77, 121, 0.269) 70%);
+  pointer-events: none; /* Prevent shapes from blocking interactions */
+  z-index: 0; /* Ensure it stays behind other content */
+}
+
+@keyframes smoke {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-30px) translateX(20px) scale(1.2);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-60px) translateX(40px) scale(1.4);
+    opacity: 0.2;
+  }
+}
+
+.smoke {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0) 80%);
+  animation: smoke 10s linear infinite;
+  opacity: 0.5;
+  pointer-events: none;
+}
+  .story-page {
+    max-width: 800px;
+    padding: 20px;
+    background: linear-gradient(to right, #4e54c8, #8f94fb, #61519e); /* Gradient changes from left to right */
+    background-size: 400% 100%; /* Increased size for smooth animation */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Satisfy', cursive; /* Apply Satisfy font */
+    color: #fff; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for contrast */
+    animation: gradientAnimation 15s ease infinite; /* Animation for gradient */
+    
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.story-page h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-family: 'Alex Brush', cursive; /* Apply Alex Brush font */
+}
+
+.story-page p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.story-page p strong {
+  font-weight: bold;
+}
+
+.story-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px; /* Adjust the max-height as needed */
+  width: auto; /* Ensures the image maintains its aspect ratio */
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: auto rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+
+.rating-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rating {
+  display: flex;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating .star {
+  cursor: pointer;
+}
+
+.rating-value {
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+
+.reviews-section {
+  margin-top: 20px;
+}
+
+.review {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.review-user {
+  font-style: italic;
+  text-align: right;
+}
+
+.comment-form {
+  margin-top: 20px;
+}
+
+.comment-form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 1.1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.comment-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Animation for StoryPage elements */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to specific elements */
+.story-page h2,
+.story-page p,
+.story-image,
+.rating-section,
+.reviews-section,
+.comment-form {
+  animation: fadeInUp 1s ease-out; /* Fade in animation */
+}
