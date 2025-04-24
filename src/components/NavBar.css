@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #343a40; /* Dark background color */
+  background-color: #111112; /* Dark background color */
   color: #fff; /* Text color */
   position: absolute; /* Fix the navbar at the top */
   top: 0;
@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   font-size: 1.5em;
-  color: #ffe520e7; /* Logo color */
+  color: #927ae9e7; /* Logo color */
 }
 
 .logo-icon {

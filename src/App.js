@@ -7,7 +7,8 @@ import StoryPage from './components/StoryPage';
 import CoverPage from './components/CoverPage';
 import './components/StoryList.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import About from './components/About';
+import Contact from './components/Contact';
 
 const App = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -26,8 +27,8 @@ const App = () => {
             <Route path="/stories" element={<StoryList searchQuery={searchQuery} />} />
             <Route path="/stories/:id" element={<StoryPage/>} />
             <Route path="/editor" element={<StoryEditor />} />
-            <Route path="/about" element={<div>About Page</div>} />
-            <Route path="/contact" element={<div>Contact Page</div>} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
       </div>

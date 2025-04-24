@@ -1,0 +1,88 @@
+/* About.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cookie&family=Dancing+Script&family=Great+Vibes&family=Pacifico&family=Satisfy&display=swap');
+
+.about-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  padding: 20px;
+  transition: background-image 2s ease-in-out; /* Smooth transition for background image */
+}
+
+.about-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for better text readability */
+  z-index: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+.story-narrative {
+  position: relative;
+  max-width: 600px;
+  z-index: 2; /* Ensure text is above overlay */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.section-title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.section-content {
+  font-size: 1.5em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.controls button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.controls button.active,
+.controls button:hover {
+  background-color: white;
+  color: #6a11cb;
+  transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
