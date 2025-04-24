@@ -3,7 +3,7 @@
 
 .cover-page {
   background-size: cover;
-  background-image: url("C:/Users/Preya/SELF-PROJECTS/storytelling/public/background_cover.jpg");
+  background-image: url("/public/background_cover.jpg");
   backface-visibility: 0.5;
   padding: 0px;
   font-family: 'Dancing Script', cursive; /* Example font */
