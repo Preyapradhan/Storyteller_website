@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# 📚 Storyteller Website - Interactive Story Sharing Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Storyteller** is a dynamic and visually engaging platform that allows users to share, explore, and enjoy written stories. Designed with simplicity and creativity in mind, this website encourages storytelling through a clean interface and responsive design.
 
-## Available Scripts
+![Storyteller Banner](https://github.com/user-attachments/assets/e7aff566-efdb-494d-a9fc-557c4a3b6757)
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- ✍️ Post and read stories in a friendly UI
+- 🔍 Search and explore stories by title or category
+- 📱 Responsive design for mobile, tablet, and desktop
+- 🌗 Dark mode for night-time reading
+- 💬 Comment section for engagement (optional)
+- 🎨 Animated transitions for immersive experience
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend:**
+  - HTML5
+  - CSS3
+  - JavaScript (Vanilla or minimal libraries)
 
-### `npm test`
+- **Backend (Optional / Extendable):**
+  - Firebase / Supabase for real-time story sharing (Optional)
+  - LocalStorage for temporary story saving
+  - JSON-based mock server (for local development)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🧠 Ideal For
 
-### `npm run build`
+- 📖 Writers who want to share their work
+- 📚 Readers looking for community-created stories
+- 👩‍🎓 Students and learners building personal projects
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧭 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository**
+```bash
+git clone https://github.com/Preyapradhan/Storyteller_website.git
+cd Storyteller_website
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Launch with Live Server**
+- Open `server.js` in a live server environment or static server
 
-### `npm run eject`
+3. **(Optional)** Connect to backend
+- Integrate Firebase/Supabase for persistent storage (Optional)
+- Update configurations in your JavaScript
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📁 Folder Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+Storyteller_website/
+├── backend/            # Backend server
+├── css/                # Stylesheets
+├── public/             # Images and fonts
+├── src/components/     # Components
+├── StoryPage.js        # Main page
+├── StoryList.js        # Stories List
+├── StoryEditor.js      # Story Editor-Submit new story
+├── About.js            # Story of Website
+└── Contact.js          # Contact Form
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🌟 Highlighted UI Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Minimalist card layout for stories
+- Modal for reading and submitting stories
+- Category filtering (e.g., horror, romance, sci-fi)
+- Parallax banner and scroll animations
 
-## Learn More
+## 🙏 Acknowledgments
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Illustrations from Freepik / Unsplash / pexels
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Fonts from Google Fonts
+- UI inspiration from Medium, Wattpad, and blog platforms
 
-### Code Splitting
+## 🎨 Website Images
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Screenshot 2025-04-24 153202](https://github.com/user-attachments/assets/939b65fd-1182-4fc9-90d1-c4fa3a09e771)
 
-### Analyzing the Bundle Size
+![Screenshot 2025-04-24 153220](https://github.com/user-attachments/assets/1648b02f-7298-4997-b85a-ac38db48718c)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Screenshot 2025-04-24 153247](https://github.com/user-attachments/assets/6372ccd3-4258-4ec6-bd58-658e1e57ff48)
 
-### Making a Progressive Web App
+![Screenshot 2025-04-24 153302](https://github.com/user-attachments/assets/139d4510-6e5f-4568-be13-eefdf75055a8)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Screenshot 2025-04-24 153328](https://github.com/user-attachments/assets/c97c28b7-7b9c-4aa8-ad60-05c0d5f423ed)
 
-### Advanced Configuration
+![Screenshot 2025-04-24 153337](https://github.com/user-attachments/assets/6779b087-4675-4933-bf78-5dbed76e4a46)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Screenshot 2025-04-24 153356](https://github.com/user-attachments/assets/93786acd-a9a5-4702-a814-8de8c5949659)
 
-### Deployment
+![Screenshot 2025-04-24 153435](https://github.com/user-attachments/assets/af585a37-ef7b-480b-84af-de4c33c0deed)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Screenshot 2025-04-24 153455](https://github.com/user-attachments/assets/ba67fa0a-54dd-46fd-8ab0-d663f709713d)
 
-### `npm run build` fails to minify
+![Screenshot 2025-04-24 153505](https://github.com/user-attachments/assets/f63547f1-f186-40d6-855b-fbbd57a86e9b)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+
+
